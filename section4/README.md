@@ -27,7 +27,7 @@ Section 4 is estimated to take a total of 10-14 hours to complete. Similar to th
 
 ## Part A How You Spend Your Time
 
-One challenge developers face, moreso when they are starting out, is estimating how long something will take. Sometimes we don't account for merge conflicts, bugs, annoying Slack messages, and all the other things that interrupt our workflow or slow us down.
+One challenge developers face, more so when they are starting out, is estimating how long something will take. Sometimes we don't account for merge conflicts, bugs, annoying Slack messages, and all the other things that interrupt our workflow or slow us down.
 
 One challenge learners in a new environment/content area face is feeling like they know nothing, and until they know everything, they feel like they are failing.
 
@@ -129,12 +129,12 @@ zebraObject.feed(); //logs "Give grass to the Zebra"
 
 Classes can serve as object factories (we can even think of them as cookie cutters!) that allow us to create multiple objects of the same type, which we will refer to as object instances.
 
-- Think of a car factory. It is set up to install engines, mount 4 wheels, attach doors and spray a nice of of paint. But the size of the engine, type of wheels, number of doors, and paint color may all differ from car to car.
+- Think of a car factory. It is set up to install engines, mount 4 wheels, attach doors and spray a nice coat of paint. But the size of the engine, type of wheels, number of doors, and paint color may all differ from car to car.
 - Think of a cookie cutter. It's a piece of metal that has a specific shape. each cookie made from it will take that shape. But, the type of dough can differ, and so can the cookie toppings.
 
 **Syntax:** A class is defined using the `class` keyword, followed by the ClassName (using [Pascal Case](https://techterms.com/definition/pascalcase#:~:text=PascalCase%20is%20a%20naming%20convention,in%20PascalCase%20is%20always%20capitalized.)), then an opening and closing curly brace.
 
-**Naming:** Class names should be a singular noun (thing). Because classes are the factories for future objects, they we name them after the general object they are creating. A couple of examples follow:
+**Naming:** Class names should be a singular noun (thing). Because classes are the factories for future objects, we name them after the general object they are creating. A couple of examples follow:
 - If you are going to create a class for cars (eventually, specific types of cars) use the name `Car`
 - If you are going to create a class for writing utensils (some pens, pencils, different colors etc.) use the name `WritingUtensil`
 The previous examples may seem pretty straightforward, but naming in programming is notoriously hard, so it's good to lay out best practices early and often!
@@ -163,11 +163,11 @@ var deposit = new TransactionItem();
 
 ### State (Properties)
 
-Proerties contains data about a specific object. We also refer to this group of data as **state**. The information format should be one of the data types we've learned about (String, Number, Boolean, Array, Object).
+Properties contains data about a specific object. We also refer to this group of data as **state**. The information format should be one of the data types we've learned about (String, Number, Boolean, Array, Object).
 
 The example that follows has 3 properties in state - `amount`, `date`, and `type`. They are declared _inside_ of the `constructor` method _inside_ of the class.
 
-> The constructor method is called when we use the `new` keyword. If a consutrcutor method is not declared inside the class, like in our skeleton above, there is actually one that we don't see. You will learn about that at a deeper level in Mod 1.
+> The constructor method is called when we use the `new` keyword. If a constructor method is not declared inside the class, like in our skeleton above, there is actually one that we don't see. You will learn about that at a deeper level in Mod 1.
 
 ```javascript
 class TransactionItem {
@@ -200,14 +200,14 @@ var deposit = new TransactionItem(200, "02/03/20", "deposit");
 console.log(deposit);
 //=>TransactionItem {amount: 200, date: "02/03/20", type: "deposit"}
 
-var withdrawl = new TransactionItem(150, "02/04/20", "withdrawl");
-console.log(withdrawl)
-//=>TransactionItem {amount: 150, date: "02/04/20", type: "withdrawl"}
+var withdrawal = new TransactionItem(150, "02/04/20", "withdrawal");
+console.log(withdrawal)
+//=>TransactionItem {amount: 150, date: "02/04/20", type: "withdrawal"}
 ```
 
 Passing arguments to the new instance and declaring parameters in the constructor allow us to build classes and create objects that follow the same blueprint, but have potentially unique data attached to each said object instance.
 
-Remember, the `new` keyword is what calls the `constructor` method. _Note the way data flows through this._ The argument of `200` maps to the paramter `amt` in the constructor. Then the `deposit` object instance has `200` as the value of the `amount` property. If you aren't quite sure how those are coming together yet - good! The exercise will be a good opportunity to poke and explore that more. In mod 1 you will go into a LOT of detail about the `this` keyword. Don't worry much about it now, but do include `this.` in your properties inside the constructor.
+Remember, the `new` keyword is what calls the `constructor` method. _Note the way data flows through this._ The argument of `200` maps to the parameter `amt` in the constructor. Then the `deposit` object instance has `200` as the value of the `amount` property. If you aren't quite sure how those are coming together yet - good! The exercise will be a good opportunity to poke and explore that more. In mod 1 you will go into a LOT of detail about the `this` keyword. Don't worry much about it now, but do include `this.` in your properties inside the constructor.
 
 > 👨🏾‍💻 PAUSE here, and complete the exercises in `classProperties.js`
 
