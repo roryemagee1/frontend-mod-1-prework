@@ -43,7 +43,7 @@ console.log(sideKicks[0]);
 
 // Print the last archEnemy to the console
 
-console.log(archEnemies[2]);
+console.log(archEnemies[archEnemies.length - 1]);
 
 // Write some code to add a new archEnemy to the archEnemies array
 
@@ -66,9 +66,9 @@ console.log(sideKicks);
 //   - saveTheDay should be a string a hero would say once they save the day
 //   - badExcuse should be a string a hero would say if they are too afraid of the dangerLevel
 
-var dangerLevel = 101;
-var saveTheDay = "Never fear, I have saved the day!";
-var badExcuse = "KrYpToNiTe...";
+// var dangerLevel = 101;
+// var saveTheDay = "Never fear, I have saved the day!";
+// var badExcuse = "I think I left the stove on...";
 
 function assessSituation(dangerLevel, saveTheDay, badExcuse) {
   if (dangerLevel > 50) {
@@ -89,7 +89,7 @@ assessSituation(101, saveTheDay, badExcuse);
 
 //Test Cases
 var announcement = 'Never fear, the Courageous Curly Bracket is here!';
-var excuse = 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.';
+var excuse = 'I think I forgot to lock up my 1992 Toyota Corolla. Be right back.';
 //assessSituation(99, announcement, excuse) > Should print - 'I think I forgot to lock up my 1992 Toyota Coralla. Be right back.'
 //assessSituation(21, announcement, excuse) > should print - 'Never fear, the Courageous Curly Bracket is here!'
 //assessSituation(3, announcement, excuse) > should print - "Meh. Hard pass."
@@ -108,7 +108,12 @@ var scaryMonster = {
   weight: 200,
   citiesDestroyed: ["Metropolis", "Gotham"],
   luckyNumbers: [13, 666],
-  address: { number: 666, street: "Weird Walkway", state: "Anti-Delaware", zip: 66666 },
+  address: {
+    number: 666,
+    street: "Weird Walkway",
+    state: "Anti-Delaware",
+    zip: 66666,
+  }
 }
 
 
